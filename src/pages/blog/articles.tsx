@@ -1,0 +1,22 @@
+export const articles = [
+    { id: 1, title: "Wybór odpowiedniego wina do posiłku", summary: "Poradnik, jak dobrać wino do różnych potraw.", content: "Pełna treść artykułu o tym, jak idealnie dobrać wino do posiłku." },
+    { id: 2, title: "Najpopularniejsze piwa rzemieślnicze w Polsce", summary: "Przegląd najchętniej wybieranych piw rzemieślniczych.", content: "Pełna treść artykułu omawiająca najpopularniejsze piwa rzemieślnicze w Polsce." },
+    { id: 3, title: "Jak przechowywać alkohole?", summary: "Praktyczne wskazówki dotyczące przechowywania różnych rodzajów alkoholi.", content: "Pełna treść artykułu zawierająca wskazówki, jak prawidłowo przechowywać wina, piwa i mocne alkohole." },
+    { id: 4, title: "Koktajle na każdą okazję", summary: "Proste przepisy na koktajle, które zrobisz w domu.", content: "Pełna treść artykułu z przepisami na popularne koktajle." },
+    { id: 5, title: "Historia whisky: od Szkocji po cały świat", summary: "Poznaj fascynującą historię whisky.", content: "Pełna treść artykułu przedstawiająca historię produkcji whisky." },
+    { id: 6, title: "Wino czerwone vs wino białe: co wybrać?", summary: "Porównanie win czerwonych i białych - różnice w smaku i zastosowaniu.", content: "Pełna treść artykułu porównująca wino czerwone i białe." },
+    { id: 7, title: "Najlepsze alkohole na prezent", summary: "Podpowiedzi, jaki alkohol wybrać na prezent.", content: "Pełna treść artykułu doradzająca w wyborze alkoholu na prezent." },
+    { id: 8, title: "Sekrety dobrego szampana", summary: "Co warto wiedzieć o szampanie, zanim go kupisz?", content: "Pełna treść artykułu odkrywająca sekrety wyboru dobrego szampana." },
+    { id: 9, title: "Piwo bezalkoholowe - rosnący trend", summary: "Dlaczego piwo bezalkoholowe zyskuje na popularności?", content: "Pełna treść artykułu omawiająca rosnącą popularność piw bezalkoholowych." },
+    { id: 10, title: "Alkohole premium - czy warto inwestować?", summary: "Analiza, czy warto kupować drogie alkohole.", content: "Pełna treść artykułu na temat alkoholi premium i ich wartości." },
+    { id: 11, title: "Kultura picia wina w Polsce", summary: "Jak zmienia się kultura picia wina w Polsce?", content: "Pełna treść artykułu opisująca zmiany w kulturze picia wina w Polsce." },
+    { id: 12, title: "Jak degustować whisky?", summary: "Praktyczny przewodnik po degustacji whisky.", content: "Pełna treść artykułu ucząca, jak prawidłowo degustować whisky." },
+    { id: 13, title: "Tradycyjne nalewki - smak domowej produkcji", summary: "Jak zrobić domowe nalewki?", content: "Pełna treść artykułu z przepisami na tradycyjne domowe nalewki." },
+    { id: 14, title: "Alkohol a zdrowie: co warto wiedzieć?", summary: "Jak alkohol wpływa na zdrowie?", content: "Pełna treść artykułu omawiająca wpływ alkoholu na zdrowie." },
+    { id: 15, title: "Historia produkcji wina", summary: "Skąd się wzięło wino i jak się je produkuje?", content: "Pełna treść artykułu na temat historii produkcji wina." },
+    { id: 16, title: "Jak dobrać kieliszki do alkoholi?", summary: "Praktyczny przewodnik po doborze odpowiednich kieliszków.", content: "Pełna treść artykułu doradzająca, jak dobrać odpowiednie kieliszki do różnych alkoholi." },
+    { id: 17, title: "Najlepsze alkohole do grillowania", summary: "Jakie alkohole najlepiej pasują do dań z grilla?", content: "Pełna treść artykułu z propozycjami alkoholi na grilla." },
+    { id: 18, title: "Trendy w świecie win na 2024 rok", summary: "Co będzie modne w świecie win w nadchodzącym roku?", content: "Pełna treść artykułu na temat trendów w świecie win na 2024 rok." },
+    { id: 19, title: "Alkohol w kuchni - jak używać?", summary: "Jak wykorzystać alkohol do gotowania?", content: "Pełna treść artykułu na temat używania alkoholu w kuchni." },
+    { id: 20, title: "Przyszłość branży alkoholowej", summary: "Co czeka branżę alkoholową w najbliższych latach?", content: "Pełna treść artykułu omawiająca przyszłość branży alkoholowej." }
+];

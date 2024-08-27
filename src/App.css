@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+.jetbrains-mono {
+  font-family: "JetBrains Mono", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.clash-font {
+  font-family: ClashBold, cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clash-medium-font {
+  font-family: ClashMedium, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+@font-face {
+  font-family: 'ClashBold';
+  src: url('fonts/clash/ClashDisplay-Bold.woff2') format('woff2'),
+  url('fonts/clash/ClashDisplay-Bold.woff') format('woff'),
+  url('fonts/clash/ClashDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: 'ClashMedium';
+  src: url('fonts/clash/ClashDisplay-Medium.woff2') format('woff2'),
+  url('fonts/clash/ClashDisplay-Medium.woff') format('woff'),
+  url('fonts/clash/ClashDisplay-Medium.ttf') format('truetype');
 }
