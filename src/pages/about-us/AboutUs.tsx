@@ -1,7 +1,6 @@
 import React from 'react';
 import "../about-us/about-us.css";
 import sampleImage from '../about-us/2024-02-07.png';
-import {InfoCard} from "../../components/info-card/InfoCard";
 import {CompanyCard} from "../../components/company-card/CompanyCard";
 
 

@@ -27,3 +27,8 @@
   url('fonts/clash/ClashDisplay-Medium.woff') format('woff'),
   url('fonts/clash/ClashDisplay-Medium.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('fonts/jetbrains-mono/JetBrainsMono-Regular.woff2') format('woff2')
+}
