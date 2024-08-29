@@ -13,7 +13,7 @@ export const Homepage = () => {
                     </h1>
                     <p className="hero-subtitle jetbrains-mono">
 
-                        Odkryj szeroki wybór alkoholi w Gagalon – od win i whisky po piwa. Z nami każda okazja będzie wyjątkowa. Nasz personel zawsze chętnie pomoże w wyborze odpowiednich produktów.
+                        Odkryj szeroki wybór alkoholi w naszej sieci sklepów – od win i whisky po piwa. Z nami każda okazja będzie wyjątkowa. Nasz personel zawsze chętnie pomoże w wyborze odpowiednich produktów.
                     </p>
                 </div>
             </div>
