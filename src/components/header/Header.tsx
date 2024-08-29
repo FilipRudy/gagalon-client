@@ -27,13 +27,13 @@ export const Header: React.FC = () => {
                             <NavLink to="/o-nas" className="nav-link">O nas</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/blog" className="nav-link">Blog</NavLink>
+                            <NavLink to="/aktualnosci" className="nav-link">Aktualności</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/promocje" className="nav-link">Obecne promocje</NavLink>
+                            <NavLink to="/promocje" className="nav-link">Promocje</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/lokalizacje" className="nav-link">Nasze sklepy</NavLink>
+                            <NavLink to="/lokalizacje" className="nav-link">Gdzie jesteśmy</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to="/kontakt" className="nav-link">Kontakt</NavLink>

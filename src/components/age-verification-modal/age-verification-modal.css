@@ -1,0 +1,97 @@
+/* src/components/age-verification-modal/AgeVerificationModal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.age-verification-modal {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    width: 400px; /* Adjust for larger screens */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    width: 250px; /* Larger size for better visibility */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-size: 1rem;
+    color: #000;
+}
+
+.age-verification-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.age-verification-description {
+    font-size: 1rem;
+    color: #000;
+    margin: 0 auto 20px auto;
+}
+
+.age-verification-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 10px;
+    justify-content: center;
+}
+
+.age-verification-buttons button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #000;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+}
+
+.age-verification-buttons button:hover {
+    background-color: #d1d1d1;
+}
+
+@media (max-width: 600px) {
+    .logo-image {
+        width: 80px; /* Adjust size for mobile */
+    }
+
+    .age-verification-title {
+        font-size: 1.2rem;
+    }
+
+    .age-verification-description {
+        font-size: 0.9rem;
+    }
+
+    .age-verification-buttons button {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}

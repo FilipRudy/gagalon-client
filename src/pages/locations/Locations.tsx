@@ -1,22 +1,72 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../locations/locations.css';
+import shop from "../about-us/2024-02-07.png";
 
 interface Location {
     id: number;
     name: string;
     lat: number;
     lng: number;
+    image: string;
 }
 
 const locations: Location[] = [
-    { id: 1, name: 'Mikołów 43-190 ul. Słoneczna 41', lat: 50.160428519976925, lng: 18.91114192023876 },
-    { id: 2, name: 'Mikołów 43-190 ul. Konstytucji 3 Maja 15', lat: 50.16728482987692, lng: 18.901447064417916 },
-    { id: 3, name: 'Zabrze-Pawłów 41-806 ul Sikorskiego 59a', lat: 50.280965211445945, lng: 18.81743984181863 },
-    { id: 4, name: 'Katowice-Kostuchna 40-750 ul. Szarych Szeregów 28', lat: 50.19366479425307, lng: 18.988574355306994 },
-    { id: 5, name: 'Łaziska Górne 43-170 ul. Orzeska 9', lat: 50.149194770792676, lng: 18.83732318414053 },
-    { id: 6, name: 'Ruda Śląska-Kochłowice 41-707 ul. Oświęcimska 126', lat: 50.253391131159844, lng: 18.904512912981495 },
-    { id: 7, name: 'Tychy-Czułów 43-100 ul. Katowicka 110', lat: 50.146560655864164, lng: 19.00056437791043 },
-    { id: 8, name: 'Lędziny, 43-143 ul. Hołdunowska 61', lat: 50.15109596770518, lng: 19.133988082289928 },
+    {
+        id: 1,
+        name: 'Mikołów 43-190 ul. Słoneczna 41',
+        lat: 50.160428519976925,
+        lng: 18.91114192023876,
+        image: shop,
+    },
+    {
+        id: 2,
+        name: 'Mikołów 43-190 ul. Konstytucji 3 Maja 15',
+        lat: 50.16728482987692,
+        lng: 18.901447064417916,
+        image: shop,
+    },
+    {
+        id: 3,
+        name: 'Zabrze-Pawłów 41-806 ul Sikorskiego 59a',
+        lat: 50.280965211445945,
+        lng: 18.81743984181863,
+        image: shop,
+    },
+    {
+        id: 4,
+        name: 'Katowice-Kostuchna 40-750 ul. Szarych Szeregów 28',
+        lat: 50.19366479425307,
+        lng: 18.988574355306994,
+        image: shop,
+    },
+    {
+        id: 5,
+        name: 'Łaziska Górne 43-170 ul. Orzeska 9',
+        lat: 50.149194770792676,
+        lng: 18.83732318414053,
+        image: shop,
+    },
+    {
+        id: 6,
+        name: 'Ruda Śląska-Kochłowice 41-707 ul. Oświęcimska 126',
+        lat: 50.253391131159844,
+        lng: 18.904512912981495,
+        image: shop,
+    },
+    {
+        id: 7,
+        name: 'Tychy-Czułów 43-100 ul. Katowicka 110',
+        lat: 50.146560655864164,
+        lng: 19.00056437791043,
+        image: shop,
+    },
+    {
+        id: 8,
+        name: 'Lędziny, 43-143 ul. Hołdunowska 61',
+        lat: 50.15109596770518,
+        lng: 19.133988082289928,
+        image: shop,
+    },
 ];
 
 export const Locations: React.FC = () => {
@@ -24,6 +74,7 @@ export const Locations: React.FC = () => {
     const mapContainerRef = useRef<HTMLDivElement>(null);
     const mapRef = useRef<google.maps.Map | null>(null);
     const markersRef = useRef<google.maps.Marker[]>([]);
+    const infoWindowRef = useRef<google.maps.InfoWindow | null>(null);
 
     useEffect(() => {
         (window as any).initMap = () => {
@@ -33,12 +84,28 @@ export const Locations: React.FC = () => {
                     zoom: 12,
                 });
 
+                infoWindowRef.current = new window.google.maps.InfoWindow();
+
                 markersRef.current = locations.map((location) => {
-                    return new window.google.maps.Marker({
+                    const marker = new window.google.maps.Marker({
                         position: { lat: location.lat, lng: location.lng },
                         map: mapRef.current,
                         title: location.name,
                     });
+
+                    marker.addListener('click', () => {
+                        if (infoWindowRef.current) {
+                            infoWindowRef.current.setContent(`
+                                <div style="text-align: center;">
+                                    <img src="${location.image}" alt="${location.name}" style="width: 250px; height: auto; border-radius: 8px;" />
+                                </div>
+                            `);
+
+                            infoWindowRef.current.open(mapRef.current, marker);
+                        }
+                    });
+
+                    return marker;
                 });
             }
         };
@@ -56,9 +123,28 @@ export const Locations: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        if (selectedLocation && mapRef.current) {
-            mapRef.current.setCenter({ lat: selectedLocation.lat, lng: selectedLocation.lng });
-            mapRef.current.setZoom(15);
+        if (selectedLocation && mapRef.current && infoWindowRef.current) {
+            const selectedMarker = markersRef.current.find(
+                (marker) =>
+                    marker.getPosition()?.lat() === selectedLocation.lat &&
+                    marker.getPosition()?.lng() === selectedLocation.lng
+            );
+
+            if (selectedMarker) {
+                mapRef.current.setCenter({
+                    lat: selectedLocation.lat,
+                    lng: selectedLocation.lng,
+                });
+                mapRef.current.setZoom(15);
+
+                infoWindowRef.current.setContent(`
+                    <div style="text-align: center;">
+                        <img src="${selectedLocation.image}" alt="${selectedLocation.name}" style="width: 150px; height: auto; border-radius: 8px;" />
+                    </div>
+                `);
+
+                infoWindowRef.current.open(mapRef.current, selectedMarker);
+            }
         }
     }, [selectedLocation]);
 

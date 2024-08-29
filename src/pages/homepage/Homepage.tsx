@@ -38,13 +38,13 @@ export const Homepage = () => {
                     />
                     <InfoCard
                         title="Ostatnie posty!"
-                        description="Uważamy, że prowadzenie sklepu z alkoholami to coś więcej niż tylko sprzedaż – sprawdź blog, gdzie znajdziesz informacje i inspiracje!"
-                        buttonDescription="Blog"
-                        path="blog"
+                        description="Uważamy, że prowadzenie sklepu z alkoholami to coś więcej niż tylko sprzedaż – sprawdź aktualności, gdzie znajdziesz informacje i inspiracje!"
+                        buttonDescription="Aktualności"
+                        path="aktualnosci"
                     />
                     <InfoCard
                         title="Lokalizacje sklepów!"
-                        description="Gdy zdecydujesz się na wizytę w jednym z naszych sklepów to wystarczy wejść w dział lokalizacji - znajdziesz tutaj nasze mapki!"
+                        description="Gdy zdecydujesz się na wizytę w jednym z naszych sklepów to wystarczy wejść w dział lokalizacji - znajdziesz tutaj nasze sklepy!"
                         buttonDescription="Lokalizacje"
                         path="lokalizacje"
                     />
