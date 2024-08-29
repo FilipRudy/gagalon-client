@@ -12,12 +12,7 @@ export const AboutUs = () => {
             <div className="about-us-product-section work-sans">
                 <div className="about-us-text-content">
                     <p className="about-us-paragraph jetbrains-mono">
-                        Jesteśmy dynamicznie rozwijającą się siecią sklepów monopolowych, oferującą szeroki asortyment
-                        alkoholi, napojów oraz przekąsek. Nasze sklepy są doskonale zaopatrzone, aby sprostać
-                        oczekiwaniom nawet najbardziej wymagających klientów. Dzięki profesjonalnej obsłudze i starannie
-                        wyselekcjonowanym produktom, gwarantujemy wyjątkowe doświadczenia zakupowe. Działamy w wielu
-                        lokalizacjach, co pozwala nam być blisko naszych klientów i dostarczać im najwyższej jakości
-                        produkty na każdą okazję.
+                        Nasza firma funkcjonuje na rynku od 21 lat i obecnie prowadzi 8 placówek handlowych. Specjalizujemy się w szerokim asortymencie, obejmującym alkohol, wino, piwo, a także napoje, słodycze i przekąski. Stawiamy na efektywne zarządzanie zaopatrzeniem, aby w pełni zaspokajać potrzeby naszych klientów i utrzymywać wysoki standard obsługi w każdym z naszych sklepów.
                     </p>
 
                 </div>
@@ -32,16 +27,17 @@ export const AboutUs = () => {
             <div className="about-us-info-cards-section">
                 <CompanyCard
                     title="Szeroki asortyment"
-                    description="Wybór alkoholi z różnych zakątków świata, od lokalnych specjałów po rzadkie, kolekcjonerskie edycje. Każdy znajdzie coś dla siebie, od klasycznych trunków po ekskluzywne nowości, które gwarantują niezapomniane doznania smakowe."
+                    description="Oferujemy alkohole z różnych zakątków świata. Znajdziesz u nas zarówno klasyczne trunki, jak i nowe, interesujące opcje."
                 />
                 <CompanyCard
                     title="Wykwalifikowany personel"
-                    description="Nasz personel posiada głęboką wiedzę o naszych produktach, jest zawsze gotowy, by doradzić i polecić idealny produkt na każdą okazję. Niezależnie od okazji, możesz zawsze liczyć na profesjonalną pomoc."
+                    description="Nasz personel dobrze zna naszą ofertę i chętnie pomoże w wyborze odpowiedniego produktu na każdą okazję."
                 />
                 <CompanyCard
                     title="Wiele lokalizacji"
-                    description="Dzięki szerokiej sieci sklepów, dostęp do ulubionych produktów jest łatwiejszy niż kiedykolwiek. Niezależnie od miejsca, zawsze zapewniamy ten sam wysoki standard obsługi i jakości, abyś mógł cieszyć się najlepszymi produktami w dogodnej lokalizacji."
+                    description="Dzięki wielu sklepom masz łatwy dostęp do ulubionych produktów. Zapewniamy spójną jakość i obsługę w każdej lokalizacji."
                 />
+
             </div>
         </div>
     );

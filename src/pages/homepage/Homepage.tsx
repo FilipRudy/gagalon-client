@@ -12,10 +12,8 @@ export const Homepage = () => {
                         Twoja sieć sklepów monopolowych #1
                     </h1>
                     <p className="hero-subtitle jetbrains-mono">
-                        Zanurz się w świecie wyjątkowych smaków! Gagalon to miejsce, gdzie znajdziesz starannie
-                        wyselekcjonowane alkohole z całego świata – od wykwintnych win, przez aromatyczne whisky,
-                        po unikalne piwa kraftowe. Zadbaj o to, by każda okazja była niezapomniana z naszymi produktami.
-                        Oferujemy szeroki wybór i fachową obsługę, która pomoże Ci dokonać najlepszego wyboru.
+
+                        Odkryj szeroki wybór alkoholi w Gagalon – od win i whisky po piwa. Z nami każda okazja będzie wyjątkowa. Nasz personel zawsze chętnie pomoże w wyborze odpowiednich produktów.
                     </p>
                 </div>
             </div>

@@ -94,7 +94,7 @@ export const Locations: React.FC = () => {
                     });
 
                     marker.addListener('click', () => {
-                        setSelectedLocation(location); // Update state to trigger info window
+                        setSelectedLocation(location);
                     });
 
                     return marker;
