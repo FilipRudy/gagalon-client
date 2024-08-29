@@ -94,15 +94,7 @@ export const Locations: React.FC = () => {
                     });
 
                     marker.addListener('click', () => {
-                        if (infoWindowRef.current) {
-                            infoWindowRef.current.setContent(`
-                                <div style="text-align: center;">
-                                    <img src="${location.image}" alt="${location.name}" style="width: 250px; height: auto; border-radius: 8px;" />
-                                </div>
-                            `);
-
-                            infoWindowRef.current.open(mapRef.current, marker);
-                        }
+                        setSelectedLocation(location); // Update state to trigger info window
                     });
 
                     return marker;
@@ -138,8 +130,8 @@ export const Locations: React.FC = () => {
                 mapRef.current.setZoom(15);
 
                 infoWindowRef.current.setContent(`
-                    <div style="text-align: center;">
-                        <img src="${selectedLocation.image}" alt="${selectedLocation.name}" style="width: 150px; height: auto; border-radius: 8px;" />
+                    <div class="info-window-content">
+                        <img src="${selectedLocation.image}" alt="${selectedLocation.name}" class="info-window-image" />
                     </div>
                 `);
 
