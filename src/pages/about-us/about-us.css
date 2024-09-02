@@ -9,10 +9,11 @@
     font-size: 52px;
     font-weight: bold;
     margin: 40px 0 20px;
-    border: solid black 1px;
-    background-color: #d7deaf;
+    border: solid #ffffff 2px;
+    color: white;
+
+    background-color: rgba(30, 119, 69, 0.7);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 23px;
 }
 
 .about-us-product-section {
@@ -36,19 +37,21 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 10px;
-    border: solid black 1px;
+    border-radius: 10px;    color: white;
+
+    border: solid #ffffff 1px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .about-us-paragraph {
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.6;
     text-align: justify;
     margin: 0;
-    background-color: #d7deaf;
+    color: white;
+    background-color: rgba(30, 119, 69, 0.7);
     border-radius: 20px;
-    border: solid black 1px;
+    border: solid #ffffff 1px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     padding: 15px;
 }

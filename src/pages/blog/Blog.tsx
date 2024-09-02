@@ -21,12 +21,12 @@ export const Blog = () => {
 
     return (
         <div className="blog-container">
-            <h1 className="blog-title clash-font">Nasze ostatnie artykuły</h1>
+            <h1 className="blog-title font-bolded">Nasze ostatnie artykuły</h1>
             <div className="blog-articles">
                 {currentArticles.map(article => (
-                    <div key={article.id} className="blog-article clash-font">
+                    <div key={article.id} className="blog-article font-bolded">
                         <h2>{article.title}</h2>
-                        <p className="jetbrains-mono">{article.summary}</p>
+                        <p className="font-unbolded">{article.summary}</p>
                         <Link to={`/artykul/${article.id}`} className="read-more">Przeczytaj</Link>
                     </div>
                 ))}

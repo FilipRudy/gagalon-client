@@ -147,7 +147,7 @@ export const Locations: React.FC = () => {
     return (
         <div className="map-with-sidebar">
             <div className="map-card" ref={mapContainerRef}></div>
-            <div className="sidebar jetbrains-mono">
+            <div className="sidebar font-unbolded">
                 <h2>Lokalizacje</h2>
                 <ul>
                     {locations.map((location) => (

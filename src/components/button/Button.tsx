@@ -1,4 +1,3 @@
-// src/components/button/Button.tsx
 import "../button/button.css";
 import { NavLink } from "react-router-dom";
 
@@ -16,7 +15,7 @@ export const Button = (props: ButtonProps) => {
     };
 
     return (
-        <NavLink to={props.path} className="button-light jetbrains-mono" onClick={handleClick}>
+        <NavLink to={props.path} className="button-light font-unbolded" onClick={handleClick}>
             {props.message}
         </NavLink>
     );

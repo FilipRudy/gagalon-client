@@ -9,10 +9,10 @@ interface InfoCardProps {
 export const CompanyCard = (props: InfoCardProps) => {
     return (
         <div className="company-card">
-            <div className="company-card-title jetbrains-mono">
+            <div className="company-card-title font-unbolded">
                 <p style={{textAlign: "center", margin: 0, fontSize: 25}}>{props.title}</p>
             </div>
-            <div className="company-card-message jetbrains-mono">
+            <div className="company-card-message font-unbolded">
                 <p>{props.description}</p>
             </div>
         </div>

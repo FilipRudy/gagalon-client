@@ -7,11 +7,11 @@ import {CompanyCard} from "../../components/company-card/CompanyCard";
 export const AboutUs = () => {
     return (
         <div className="about-us-container">
-            <h2 className="about-us-section-title clash-font">Kim Jesteśmy</h2>
+            <h2 className="about-us-section-title font-bolded">Kim Jesteśmy</h2>
 
             <div className="about-us-product-section work-sans">
                 <div className="about-us-text-content">
-                    <p className="about-us-paragraph jetbrains-mono">
+                    <p className="about-us-paragraph font-unbolded">
                         Nasza firma funkcjonuje na rynku od 21 lat i obecnie prowadzi 8 placówek handlowych. Specjalizujemy się w szerokim asortymencie, obejmującym alkohol, wino, piwo, a także napoje, słodycze i przekąski. Stawiamy na efektywne zarządzanie zaopatrzeniem, aby w pełni zaspokajać potrzeby naszych klientów i utrzymywać wysoki standard obsługi w każdym z naszych sklepów.
                     </p>
 
@@ -22,7 +22,7 @@ export const AboutUs = () => {
             </div>
 
             <div className="section-break"></div>
-            <h2 className="about-us-section-title clash-font">Co Nas Cechuje</h2>
+            <h2 className="about-us-section-title font-bolded">Co Nas Cechuje</h2>
 
             <div className="about-us-info-cards-section">
                 <CompanyCard

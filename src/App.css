@@ -1,9 +1,9 @@
-.jetbrains-mono {
-  font-family: "JetBrains Mono", sans-serif;
+.font-unbolded {
+  font-family: Tweaat, sans-serif;
 }
 
-.clash-font {
-  font-family: ClashBold, cursive;
+.font-bolded {
+  font-family: Tweaa, serif;
 }
 
 .clash-medium-font {
@@ -29,6 +29,10 @@
 }
 
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: url('fonts/jetbrains-mono/JetBrainsMono-Regular.woff2') format('woff2')
+  font-family: 'Tweaa';
+  src: url('fonts/tw-cent-mt-bolded/Tw Cen MT Condensed Extra Bold.woff') format('woff')
+}
+@font-face {
+  font-family: 'Tweaat';
+  src: url('fonts/tw-cent-mt/Tw Cen MT.woff') format('woff')
 }

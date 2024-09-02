@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import logo from "../header/logo-białe.png";
+import logo from "../header/logo-2-cień.png";
 import {NavLink} from "react-router-dom";
 
 export const Footer = () => {
@@ -12,7 +12,8 @@ export const Footer = () => {
                         <img src={logo} alt="Gagalon" className="footer-icon"/>
                         <div className="footer-separator-mobile"></div>
 
-                    </NavLink></div>
+                    </NavLink>
+                </div>
 
                 <div className="footer-links">
                 <div className="footer-separator"></div>

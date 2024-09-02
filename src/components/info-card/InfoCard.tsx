@@ -12,9 +12,9 @@ interface InfoCardProps {
 export const InfoCard = (props: InfoCardProps) => {
     return (
         <div className="info-card">
-            <div className="info-card-title jetbrains-mono">{props.title}</div>
-            <div className="info-card-description jetbrains-mono">{props.description}</div>
-            <div className="info-card-button jetbrains-mono">
+            <div className="info-card-title font-bolded">{props.title}</div>
+            <div className="info-card-description font-unbolded">{props.description}</div>
+            <div className="info-card-button font-unbolded">
                 <Button message={`${props.buttonDescription}`} path={`/${props.path}`} />
             </div>
         </div>

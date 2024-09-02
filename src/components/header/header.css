@@ -1,9 +1,58 @@
 .navbar {
-    background-color: #1e7745;
+    background-color: #026533;
     padding: 1rem 0;
     width: 100%;
     margin-bottom: 100px;
+    background-image: url("../header/Gagalon_szarfa (11).svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left -10%;
 }
+
+@media (max-width: 1500px) {
+    .navbar {
+        background-size: 45%;
+        background-position: left -145%;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .navbar {
+        background-size: 65%;
+        background-position: left -80%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .navbar {
+        background-size: 80%;
+        background-position: left -60%;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar {
+        background-size: 120%;
+        background-position: left -80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        background-size: 180%;
+        background-position: left -80%;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar {
+        background-size: 220%;
+        background-position: left -80%;
+    }
+}
+
 
 .container-fluid {
     display: flex;
@@ -20,7 +69,7 @@
 }
 
 .header-logo {
-    height: 60px;
+    height: 70px;
 }
 
 .navbar-nav {
@@ -38,10 +87,11 @@
 .nav-link {
     color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 23px;
     position: relative;
     padding: 0.5rem;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: Tweaa, serif;
+
     transition: color 0.3s ease;
 }
 

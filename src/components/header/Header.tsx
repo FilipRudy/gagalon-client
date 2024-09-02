@@ -1,7 +1,7 @@
 import React from "react";
 import "../header/header.css";
 import { NavLink } from "react-router-dom";
-import logo from "../../../src/components/header/logo-białe.png";
+import logo from "../../../src/components/header/logo-2-cień.png";
 
 export const Header: React.FC = () => {
     return (

@@ -1,19 +1,23 @@
 import React from "react";
 import "../homepage/homepage.css";
 import {InfoCard} from "../../components/info-card/InfoCard";
+import logo from "../../components/header/logo-2-cień.png";
 
 export const Homepage = () => {
     return (
         <div className="main-page">
             <div className="section-break"></div>
             <div className="hero-section">
-                <div className="hero-content">
-                    <h1 className="hero-title clash-font">
+                <div className="hero-content"><img src={logo} alt="Gagalon" className="footer-icon"/>
+
+                    <h1 className="hero-title font-bolded">
+
                         Twoja sieć sklepów monopolowych #1
                     </h1>
-                    <p className="hero-subtitle jetbrains-mono">
+                    <p className="hero-subtitle font-unbolded">
 
-                        Odkryj szeroki wybór alkoholi w naszej sieci sklepów – od win i whisky po piwa. Z nami każda okazja będzie wyjątkowa. Nasz personel zawsze chętnie pomoże w wyborze odpowiednich produktów.
+                        Odkryj szeroki wybór alkoholi w naszej sieci sklepów – od win i whisky po piwa. Z nami każda
+                        okazja będzie wyjątkowa. Nasz personel zawsze chętnie pomoże w wyborze odpowiednich produktów.
                     </p>
                 </div>
             </div>
@@ -21,7 +25,7 @@ export const Homepage = () => {
             <div className="section-break"></div>
 
             <div className="why-us">
-                <h1 className="clash-font text-center title">
+                <h1 className="font-bolded text-center title">
                     Zainteresowany? Poznaj nasze..
                 </h1>
                 <div className="section-break"></div>

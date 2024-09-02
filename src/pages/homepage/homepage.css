@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #d7deaf;
-    background-image: url("../../pages/homepage/pattern.svg");
+    background-image: url("../../pages/homepage/beer-mugs-wheat-seeds-high-angle1.png");
+    background-size: cover;
+
     overflow-x: hidden;
 }
 
@@ -14,45 +16,42 @@ body {
 }
 
 .hero-section {
-    padding: 60px 20px;
-    color: #000000;
-    background-color: #d7deaf;
-    border-radius: 230px;
-    border: solid black 1px;
+    padding: 40px 20px;
+    color: #ffffff;
+    background-color: rgba(2, 101, 51, 0.7);
+    border: solid #ffffff 2px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 .hero-title {
-    font-size: 52px;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.title {
-    border: solid black 1px;
-    background-color: #d7deaf;    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-    border-radius: 23px;
+.hero-subtitle {
+    font-size: 1.5rem;
 }
 
-.hero-subtitle {
-    font-size: 28px;
+.title {
+    border: solid #ffffff 1px;
+    background-color: rgba(2, 101, 51, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 23px;
 }
 
 .section-break {
-    height: 100px;
+    height: 50px;
 }
 
 .why-us {
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .why-us h1 {
-    font-size: 52px;
-    color: #333333;
-    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #ffffff;     margin-bottom: 20px;
 }
 
 .info-cards {
@@ -62,14 +61,63 @@ body {
     gap: 20px;
 }
 
+.info-card {
+    flex: 1 1 300px;
+    max-width: 100%;
+    margin: 10px;
+}
+
 @media (max-width: 768px) {
+    .hero-section {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    body {
+        background-position: 20% center;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .why-us h1 {
+        font-size: 2rem;
+    }
+
+    .section-break {
+        height: 40px;
+    }
+
     .info-cards {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
+    }
+
+    .info-card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .why-us h1 {
+        font-size: 1.5rem;
     }
 
     .info-card {
         width: 100%;
-        max-width: 400px;
     }
 }

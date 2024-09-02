@@ -6,7 +6,7 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
 }
 
 .promo-carousel-container::before,
@@ -112,7 +112,7 @@
     border-color: transparent transparent transparent #fff;
 }
 
-/* Adjust arrow size for screens smaller than 480px */
+
 @media (max-width: 480px) {
     .carousel-control-prev,
     .carousel-control-next {
