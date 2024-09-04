@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../locations/locations.css';
 import shop from "../about-us/2024-02-07.png";
+import tychy from "../locations/456687991_1164014504685652_2035208161489897785_n.jpg";
+import szareSzeregi from "../locations/457254280_1019200423328253_1983805356187099055_n.jpg";
+import laziskaGorne from "../locations/457228345_506187455677444_8492315038740760205_n.jpg";
+import ledziny from "../locations/457143343_1196301628341291_2942150268179266018_n.jpg";
 
 interface Location {
     id: number;
@@ -37,14 +41,14 @@ const locations: Location[] = [
         name: 'Katowice-Kostuchna 40-750 ul. Szarych Szeregów 28',
         lat: 50.19366479425307,
         lng: 18.988574355306994,
-        image: shop,
+        image: szareSzeregi,
     },
     {
         id: 5,
         name: 'Łaziska Górne 43-170 ul. Orzeska 9',
         lat: 50.149194770792676,
         lng: 18.83732318414053,
-        image: shop,
+        image: laziskaGorne,
     },
     {
         id: 6,
@@ -58,14 +62,14 @@ const locations: Location[] = [
         name: 'Tychy-Czułów 43-100 ul. Katowicka 110',
         lat: 50.146560655864164,
         lng: 19.00056437791043,
-        image: shop,
+        image: tychy,
     },
     {
         id: 8,
         name: 'Lędziny, 43-143 ul. Hołdunowska 61',
         lat: 50.15109596770518,
         lng: 19.133988082289928,
-        image: shop,
+        image: ledziny,
     },
 ];
 
