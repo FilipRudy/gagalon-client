@@ -2,8 +2,8 @@
     background-color: #026533;
     background-image: url("../header/Gagalon_szarfa (11).svg");
     background-repeat: no-repeat;
-    background-size: 56%;
-    background-position: left 400%;
+    background-size: 45%;
+    background-position: left 150%;
     color: #efeded;
     padding: 2rem;
     width: 100vw;
@@ -14,6 +14,35 @@
     margin-right: -50vw;
     margin-top: 100px;
 }
+
+@media (max-width: 1500px) {
+    .footer-container {
+        background-size: 55%;
+        background-position: left 150%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .footer-container {
+        background-size: 55%;
+        background-position: left 120%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-container {
+        background-size: 65%;
+        background-position: left 120%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .footer-container {
+        background-image: none;
+    }
+}
+
 
 .footer-content {
     display: flex;

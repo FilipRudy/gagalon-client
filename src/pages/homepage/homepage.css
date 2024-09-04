@@ -21,7 +21,8 @@ body {
     background-color: rgba(2, 101, 51, 0.7);
     border: solid #ffffff 2px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);        border-radius: 15px;
+
 }
 
 .hero-title {
@@ -95,7 +96,7 @@ body {
     .info-cards {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     .info-card {

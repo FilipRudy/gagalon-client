@@ -23,7 +23,7 @@
 }
 
 .blog-article {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     border: solid #ffffff 1px;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -42,7 +42,7 @@
 }
 
 .read-more {
-    color: #007bff;
+    color: #2ee063;
     text-decoration: none;
     font-weight: bold;
 }
@@ -60,15 +60,15 @@
     margin: 0 5px;
     padding: 10px 15px;
     font-size: 16px;
-    background-color: #007bff;
+    background-color: #27b751;
     color: white;
-    border: none;
+    border: solid white 2px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .blog-pagination button.active {
-    background-color: #0056b3;
+    background-color: #167232;
 }
 
 .blog-pagination button:hover:not(.active) {

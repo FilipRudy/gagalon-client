@@ -1,7 +1,7 @@
 import React from 'react';
 import "../age-verification-modal/age-verification-modal.css";
 import { Button } from '../button/Button';
-import logo from '../age-verification-modal/gagalon-logo_plaskie.png';
+import logo from '../age-verification-modal/logo-biel-1.png';
 
 interface AgeVerificationModalProps {
     onConfirm: () => void;

@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,9 @@
 }
 
 .age-verification-modal {
-    background-color: #fff;
+    background-color: rgba(2, 101, 51, 0.7);
     border-radius: 10px;
+    border: solid white 2px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -40,30 +41,30 @@
 
 .logo-text {
     font-size: 1.4rem;
-    color: #000;
+    color: white;
 }
 
 .logo-subtext {
     font-size: 0.9rem;
-    color: #555;
+    color: #ffffff;
     margin-top: 5px;
 }
 
 .logo-subtext-small {
     font-size: 0.7rem;
-    color: #555;
+    color: #ffffff;
     margin-top: 5px;
 }
 
 .age-verification-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #000;
+    color: white;
 }
 
 .age-verification-description {
     font-size: 1.4rem;
-    color: #000;
+    color: white;
     margin: 0 auto 20px auto;
 }
 
@@ -112,6 +113,6 @@
 
     .logo-text {
         font-size: 1rem;
-        color: #000;
+        color: white;
     }
 }
