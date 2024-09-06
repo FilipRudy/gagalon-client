@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../locations/locations.css';
-import shop from "../about-us/2024-02-07.png";
 import tychy from "../locations/456687991_1164014504685652_2035208161489897785_n.jpg";
 import szareSzeregi from "../locations/457254280_1019200423328253_1983805356187099055_n.jpg";
 import laziskaGorne from "../locations/457228345_506187455677444_8492315038740760205_n.jpg";
 import ledziny from "../locations/457143343_1196301628341291_2942150268179266018_n.jpg";
+import mikolow from "../locations/mikolow.jpg";
+import ruda from "../locations/ruda.jpg";
+import sloneczna from "../locations/sloneczna.jpg";
+import zabrze from "../locations/zabrze.jpg";
 
 interface Location {
     id: number;
@@ -20,21 +23,21 @@ const locations: Location[] = [
         name: 'Mikołów 43-190 ul. Słoneczna 41',
         lat: 50.160428519976925,
         lng: 18.91114192023876,
-        image: shop,
+        image: sloneczna,
     },
     {
         id: 2,
         name: 'Mikołów 43-190 ul. Konstytucji 3 Maja 15',
         lat: 50.16728482987692,
         lng: 18.901447064417916,
-        image: shop,
+        image: mikolow,
     },
     {
         id: 3,
         name: 'Zabrze-Pawłów 41-806 ul Sikorskiego 59a',
         lat: 50.280965211445945,
         lng: 18.81743984181863,
-        image: shop,
+        image: zabrze,
     },
     {
         id: 4,
@@ -55,7 +58,7 @@ const locations: Location[] = [
         name: 'Ruda Śląska-Kochłowice 41-707 ul. Oświęcimska 126',
         lat: 50.253391131159844,
         lng: 18.904512912981495,
-        image: shop,
+        image: ruda,
     },
     {
         id: 7,
