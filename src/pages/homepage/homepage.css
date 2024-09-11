@@ -3,9 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #d7deaf;
-    background-image: url("../../pages/homepage/beer-mugs-wheat-seeds-high-angle1.png");
+    background-image: url("../../pages/homepage/pexels-amar-16068125.jpg");
     background-size: cover;
-
     overflow-x: hidden;
 }
 
@@ -21,8 +20,8 @@ body {
     background-color: rgba(2, 101, 51, 0.7);
     border: solid #ffffff 2px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);        border-radius: 15px;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
 .hero-title {
@@ -52,7 +51,8 @@ body {
 
 .why-us h1 {
     font-size: 2.5rem;
-    color: #ffffff;     margin-bottom: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
 .info-cards {
@@ -74,9 +74,7 @@ body {
         border-radius: 15px;
     }
 
-    body {
-        background-position: 20% center;
-    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -106,6 +104,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    body {
+        background-position: center top;
+    }
+
     .hero-title {
         font-size: 1.8rem;
     }
