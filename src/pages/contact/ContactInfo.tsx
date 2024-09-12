@@ -14,7 +14,7 @@ export const ContactInfo = () => {
                     </p>
                     <p className="font-unbolded">
                         <strong>2. Mikołów 43-190, ul. Konstytucji 3 Maja 15</strong><br />
-                        <strong><a href="tel:+48327382825">+48 32 738 28 25</a></strong>
+                        <strong><a href="tel:+48327382825">+48 32 738 25 62</a></strong>
                     </p>
                     <p className="font-unbolded">
                         <strong>3. Zabrze-Pawłów 41-806, ul. Sikorskiego 59a</strong><br />
@@ -30,7 +30,7 @@ export const ContactInfo = () => {
                     </p>
                     <p className="font-unbolded">
                         <strong>6. Ruda Śląska-Kochłowice 41-707, ul. Oświęcimska 126</strong><br />
-                        <strong><a href="tel:+48323407599">+48 32 340 75 99</a></strong>
+                        <strong><a href="tel:+48323407599">+48 32 340 70 59</a></strong>
                     </p>
                     <p className="font-unbolded">
                         <strong>7. Tychy-Czułów 43-100, ul. Katowicka 110</strong><br />
