@@ -16,7 +16,16 @@ import { AgeVerificationModal } from './components/age-verification-modal/AgeVer
 export const App = () => {
   const [isAgeVerified, setIsAgeVerified] = useState<boolean>(false);
   const [isAgeCheckComplete, setIsAgeCheckComplete] = useState<boolean>(false);
+  const [isImageLoaded, setIsImageLoaded] = useState<boolean>(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const bgImage = new Image();
+    bgImage.src = 'https://gagalon-images.s3.eu-north-1.amazonaws.com/homepage/pexels-rachel-claire-6752422+(1).jpg';
+    bgImage.onload = () => {
+      setIsImageLoaded(true);
+    };
+  }, []);
 
   useEffect(() => {
     const ageVerified = Cookies.get('ageVerified');
@@ -49,7 +58,13 @@ export const App = () => {
     window.location.href = 'https://www.google.pl';
   };
 
-  if (!isAgeCheckComplete) return null;
+  if (!isAgeCheckComplete || !isImageLoaded) {
+    return (
+        <div className="loading-screen">
+          <div className="spinner"></div>
+        </div>
+    );
+  }
 
   return (
       <div className="background-color">
