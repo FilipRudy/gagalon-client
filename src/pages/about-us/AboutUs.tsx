@@ -1,6 +1,5 @@
 import React from 'react';
 import "../about-us/about-us.css";
-import sampleImage from '../locations/sloneczna.jpg';
 import {CompanyCard} from "../../components/company-card/CompanyCard";
 
 
@@ -17,7 +16,7 @@ export const AboutUs = () => {
 
                 </div>
                 <div className="about-us-image-content">
-                    <img className="about-us-image" src={sampleImage} alt="About Us"/>
+                    <img className="about-us-image" src={"https://gagalon-images.s3.eu-north-1.amazonaws.com/locations/sloneczna.jpg"} alt="About Us"/>
                 </div>
             </div>
 

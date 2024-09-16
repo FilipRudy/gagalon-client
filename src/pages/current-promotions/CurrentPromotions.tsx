@@ -1,15 +1,10 @@
 import React, { useEffect } from 'react';
 import '../current-promotions/current-promotions.css';
-import { TransformWrapper, TransformComponent, ReactZoomPanPinchContentRef } from 'react-zoom-pan-pinch';
+import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import { Carousel } from 'react-bootstrap';
 
-import promoImage1 from './img1.png';
-import promoImage2 from './img2.png';
-import promoImage3 from './img3.png';
-import promoImage4 from './img4.png';
-
 export const CurrentPromotions: React.FC = () => {
-    const promoImages = [promoImage1, promoImage2, promoImage3, promoImage4];
+    const promoImages = ["https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/img1.webp", "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/img2.webp", "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/img3.webp", "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/img4.webp"];
 
     useEffect(() => {
         const promoContainer = document.querySelector('.promo-carousel-container');

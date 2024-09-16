@@ -1,13 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../locations/locations.css';
-import tychy from "../locations/456687991_1164014504685652_2035208161489897785_n.jpg";
-import szareSzeregi from "../locations/457254280_1019200423328253_1983805356187099055_n.jpg";
-import laziskaGorne from "../locations/457228345_506187455677444_8492315038740760205_n.jpg";
-import ledziny from "../locations/457143343_1196301628341291_2942150268179266018_n.jpg";
-import mikolow from "../locations/mikolow.jpg";
-import ruda from "../locations/ruda.jpg";
-import sloneczna from "../locations/sloneczna.jpg";
-import zabrze from "../locations/zabrze.jpg";
 
 interface Location {
     id: number;
@@ -23,56 +15,56 @@ const locations: Location[] = [
         name: 'Mikołów 43-190 ul. Słoneczna 41',
         lat: 50.160428519976925,
         lng: 18.91114192023876,
-        image: sloneczna,
+        image: "https://gagalon-images.s3.eu-north-1.amazonaws.com/locations/sloneczna.jpg",
     },
     {
         id: 2,
         name: 'Mikołów 43-190 ul. Konstytucji 3 Maja 15',
         lat: 50.16728482987692,
         lng: 18.901447064417916,
-        image: mikolow,
+        image: "https://gagalon-images.s3.eu-north-1.amazonaws.com/locations/mikolow.jpg",
     },
     {
         id: 3,
         name: 'Zabrze-Pawłów 41-806 ul Sikorskiego 59a',
         lat: 50.280965211445945,
         lng: 18.81743984181863,
-        image: zabrze,
+        image: "https://gagalon-images.s3.eu-north-1.amazonaws.com/locations/zabrze.jpg",
     },
     {
         id: 4,
         name: 'Katowice-Kostuchna 40-750 ul. Szarych Szeregów 28',
         lat: 50.19366479425307,
         lng: 18.988574355306994,
-        image: szareSzeregi,
+        image: "https://gagalon-images.s3.eu-north-1.amazonaws.com/locations/szarych.jpg",
     },
     {
         id: 5,
         name: 'Łaziska Górne 43-170 ul. Orzeska 9',
         lat: 50.149194770792676,
         lng: 18.83732318414053,
-        image: laziskaGorne,
+        image: "https://gagalon-images.s3.eu-north-1.amazonaws.com/locations/orzeska.jpg",
     },
     {
         id: 6,
         name: 'Ruda Śląska-Kochłowice 41-707 ul. Oświęcimska 126',
         lat: 50.253391131159844,
         lng: 18.904512912981495,
-        image: ruda,
+        image: "https://gagalon-images.s3.eu-north-1.amazonaws.com/locations/ruda.jpg",
     },
     {
         id: 7,
         name: 'Tychy-Czułów 43-100 ul. Katowicka 110',
         lat: 50.146560655864164,
         lng: 19.00056437791043,
-        image: tychy,
+        image: "https://gagalon-images.s3.eu-north-1.amazonaws.com/locations/czulow.jpg",
     },
     {
         id: 8,
         name: 'Lędziny, 43-143 ul. Hołdunowska 61',
         lat: 50.15109596770518,
         lng: 19.133988082289928,
-        image: ledziny,
+        image: "https://gagalon-images.s3.eu-north-1.amazonaws.com/locations/ledziny.jpg",
     },
 ];
 

@@ -1,14 +1,13 @@
 import React from "react";
 import "../homepage/homepage.css";
 import {InfoCard} from "../../components/info-card/InfoCard";
-import logo from "../../components/header/logo-2-cień.png";
 
 export const Homepage = () => {
     return (
         <div className="main-page">
             <div className="section-break"></div>
             <div className="hero-section">
-                <div className="hero-content"><img src={logo} alt="Gagalon" className="footer-icon"/>
+                <div className="hero-content"><img src={"https://gagalon-images.s3.eu-north-1.amazonaws.com/logos/logo-bold.png"} alt="Gagalon" className="footer-icon"/>
 
                     <h1 className="hero-title font-bolded">
 

@@ -1,7 +1,6 @@
 import React from "react";
 import "../header/header.css";
 import { NavLink } from "react-router-dom";
-import logo from "../../../src/components/header/logo-2-cień.png";
 import {useNavbarBackground} from "../../hooks/useNavbarBackground";
 
 export const Header = () => {
@@ -11,7 +10,7 @@ export const Header = () => {
         <nav className={`navbar navbar-expand-lg ${isExpanded ? 'expanded' : ''}`}>
             <div className="container-fluid">
                 <NavLink to="/" className="navbar-brand">
-                    <img src={logo} alt="Gagalon" className="header-logo" />
+                    <img src={"https://gagalon-images.s3.eu-north-1.amazonaws.com/logos/logo-bold.png"} alt="Gagalon" className="header-logo" />
                 </NavLink>
                 <button
                     className="navbar-toggler"
