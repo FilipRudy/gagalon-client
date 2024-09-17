@@ -4,7 +4,7 @@ import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import { Carousel } from 'react-bootstrap';
 
 export const CurrentPromotions: React.FC = () => {
-    const promoImages = ["https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/img1.webp", "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/img2.webp", "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/img3.webp", "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/img4.webp"];
+    const promoImages = ["https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/morawy/IMG-20240916-WA0000.webp"];
 
     useEffect(() => {
         const promoContainer = document.querySelector('.promo-carousel-container');
