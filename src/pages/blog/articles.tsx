@@ -3,15 +3,51 @@ export const articles = [
         id: 1,
         title: "Wycieczka Węgry-Słowenia-Morawy",
         summary: "Relacja z wycieczki po Węgrzech, Słowenii i Morawach",
-        content: `We wrześniu tego roku cztery nasze ekspedientki miały okazję wziąć udział w wycieczce obejmującej Węgry, Słowenię i Morawy, gdzie zgłębiały tajniki wina – od uprawy winorośli, przez zbiory, aż po produkcję.
+        content: ``,
+        firstSplit: "We wrześniu tego roku cztery nasze ekspedientki miały okazję wziąć udział w wycieczce obejmującej Węgry, Słowenię i Morawy, gdzie zgłębiały tajniki wina – od uprawy winorośli, przez zbiory, aż po produkcję.",
+        secondSplit: "\n\nWęgierska część wycieczki odbyła się w winiarni Lajos Feind, założonej w 1995 roku. Uczestniczki miały możliwość zwiedzenia winnicy, degustacji win oraz spaceru nad malowniczym Balatonem o zachodzie słońca.\n",
+        thirdSplit: "\nSłowenia zachwyciła malowniczymi wzgórzami regionu Goriška Brda, gdzie odwiedziły winiarnię Klet Brda. Program obejmował liczne atrakcje, takie jak zwiedzanie linii produkcyjnej, udział w zbiorach winogron, asystowanie przy produkcji wina, degustacje dopasowane do odpowiednich potraw oraz wycieczkę do Zamku Dobrovo, gdzie również odbyła się degustacja.\n",
+        fourthSplit: "\nMorawy powitały uczestniczki w winiarni Zámecké Vinařství Bzenec, jednej z nielicznych znajdujących się w zamku. Tam, w ponad czterystuletnich piwnicach, odbywały się degustacje lokalnych win.",
+        fifthSplit: "Wycieczka dostarczyła uczestniczkom wielu pozytywnych wrażeń, nowych informacji oraz rozrywki.",
+        imagesSplit1:
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/morawy/IMG-20240916-WA0000.webp",
 
-Węgierska część wycieczki odbyła się w winiarni Lajos Feind, założonej w 1995 roku. Uczestniczki miały możliwość zwiedzenia winnicy, degustacji win oraz spaceru nad malowniczym Balatonem o zachodzie słońca.
+        imagesSplit2: ["https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0017.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0019.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0020.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0021.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0022.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0023.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0024.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0025.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0026.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0027.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0028.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0029.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0030.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0031.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/wegry/IMG-20240916-WA0032.webp",
+        ],
+        imagesSplit3: [
 
-Słowenia zachwyciła malowniczymi wzgórzami regionu Goriška Brda, gdzie odwiedziły winiarnię Klet Brda. Program obejmował liczne atrakcje, takie jak zwiedzanie linii produkcyjnej, udział w zbiorach winogron, asystowanie przy produkcji wina, degustacje dopasowane do odpowiednich potraw oraz wycieczkę do Zamku Dobrovo, gdzie również odbyła się degustacja.
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0001.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0002.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0003.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0004.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0005.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0006.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0007.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0008.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0009.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0010.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0011.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0012.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0013.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0014.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0015.webp",
+            "https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/slowenia/IMG-20240916-WA0016.webp",
 
-Morawy powitały uczestniczki w winiarni Zámecké Vinařství Bzenec, jednej z nielicznych znajdujących się w zamku. Tam, w ponad czterystuletnich piwnicach, odbywały się degustacje lokalnych win.
-
-Wycieczka dostarczyła uczestniczkom wielu pozytywnych wrażeń, nowych informacji oraz rozrywki.`,
-        image: "https://gagalon-images.s3.eu-north-1.amazonaws.com/locations/sloneczna.jpg"
+        ],
+        layout: "photo-left"
     },
 ];

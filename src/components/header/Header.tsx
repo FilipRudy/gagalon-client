@@ -10,7 +10,7 @@ export const Header = () => {
         <nav className={`navbar navbar-expand-lg ${isExpanded ? 'expanded' : ''}`}>
             <div className="container-fluid">
                 <NavLink to="/" className="navbar-brand">
-                    <img src={"https://gagalon-images.s3.eu-north-1.amazonaws.com/logos/logo-bold.png"} alt="Gagalon" className="header-logo" />
+                    <img src={"https://gagalon-images.s3.eu-north-1.amazonaws.com/logos/logo-bold.webp"} alt="Gagalon" className="header-logo" />
                 </NavLink>
                 <button
                     className="navbar-toggler"

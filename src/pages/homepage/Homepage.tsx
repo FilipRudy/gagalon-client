@@ -7,7 +7,7 @@ export const Homepage = () => {
         <div className="main-page">
             <div className="section-break"></div>
             <div className="hero-section">
-                <div className="hero-content"><img src={"https://gagalon-images.s3.eu-north-1.amazonaws.com/logos/logo-bold.png"} alt="Gagalon" className="footer-icon"/>
+                <div className="hero-content"><img src={"https://gagalon-images.s3.eu-north-1.amazonaws.com/logos/logo-bold.webp"} alt="Gagalon" className="footer-icon"/>
 
                     <h1 className="hero-title font-bolded">
 

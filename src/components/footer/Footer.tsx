@@ -8,7 +8,7 @@ export const Footer = () => {
             <div className="footer-content">
                 <div className="footer-logo">
                     <NavLink to="/">
-                        <img src={"https://gagalon-images.s3.eu-north-1.amazonaws.com/logos/logo-thin.png"} alt="Gagalon" className="footer-icon" />
+                        <img src={"https://gagalon-images.s3.eu-north-1.amazonaws.com/logos/logo-thin.webp"} alt="Gagalon" className="footer-icon" />
                         <div className="footer-separator-mobile"></div>
                     </NavLink>
                 </div>
