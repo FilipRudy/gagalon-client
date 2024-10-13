@@ -12,7 +12,7 @@ export const BlogPost = () => {
         return <div>Article not found</div>;
     }
 
-    const formattedContent = article.content.split('\n').map((line, index) => (
+    const formattedContent = article.firstSplit.split('\n').map((line, index) => (
         <p key={index} >
             {line}
         </p>
@@ -37,12 +37,12 @@ export const BlogPost = () => {
                     </div>
                     <div className="about-us-image-content">
                         <Carousel>
-                            {article.imagesSplit3.map((image, index) => (
+                            {article.imagesSplit1.map((image, index) => (
                                 <Carousel.Item key={index}>
                                     <img
                                         className="d-block rounded carousel-image"
                                         src={image}
-                                        alt={`Split 2 Image ${index + 1}`}
+                                        alt={`IMG`}
                                     />
                                 </Carousel.Item>
                             ))}
@@ -63,7 +63,7 @@ export const BlogPost = () => {
                                         <img
                                             className="d-block rounded carousel-image"
                                             src={image}
-                                            alt={`Split 2 Image ${index + 1}`}
+                                            alt={`IMG`}
                                         />
                                     </Carousel.Item>
                                 ))}
@@ -84,19 +84,131 @@ export const BlogPost = () => {
                                 {article.fifthSplit}
                             </p>
                         </div>
+
                         <div className="about-us-image-content">
-                            <img className="carousel-image" src={article.imagesSplit1} alt="About Us"/>
+                            <div className="">
+                                <Carousel>
+                                    {article.imagesSplit3.map((image, index) => (
+                                        <Carousel.Item key={index}>
+                                            <img
+                                                className="d-block rounded carousel-image"
+                                                src={image}
+                                                alt={`IMG`}
+                                            />
+                                        </Carousel.Item>
+                                    ))}
+                                </Carousel>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+            {article.layout === "photo-left-six-paragraphs" && (
+                <div>
+                <div className="about-us-product-section work-sans">
+                    <div className="about-us-text-content about-us-content-border">
+                        <p className="about-us-paragraph font-unbolded">
+                            {article.firstSplit}
+                        </p>
+                        <div className="small-section-break"></div>
+                        <p className="about-us-paragraph font-unbolded">
+                            {article.secondSplit}
+                        </p>
+                    </div>
+                    <div className="about-us-image-content">
+                        <Carousel>
+                            {article.imagesSplit1.map((image, index) => (
+                                <Carousel.Item key={index}>
+                                    <img
+                                        className="d-block rounded carousel-image"
+                                        src={image}
+                                        alt={`IMG`}
+                                    />
+                                </Carousel.Item>
+                            ))}
+                        </Carousel>                    </div>
+                </div>
+                <div className="about-us-product-section work-sans">
+
+                    <div className="about-us-text-content about-us-content-border">
+                        <p className="about-us-paragraph font-unbolded">
+                            {article.thirdSplit}
+                        </p>
+                        <div className="small-section-break"></div>
+
+                        <p className="about-us-paragraph font-unbolded">
+                            {article.fourthSplit}
+                        </p>
+                    </div>
+                    <div className="about-us-image-content">
+                    <div className="">
+                            <Carousel>
+                            {article.imagesSplit2.map((image, index) => (
+                                    <Carousel.Item key={index}>
+                                        <img
+                                            className="d-block rounded carousel-image"
+                                            src={image}
+                                            alt={`IMG`}
+                                        />
+                                    </Carousel.Item>
+                                ))}
+                            </Carousel>
+                        </div>
+                    </div>
+                </div>
+                    <div className="about-us-product-section work-sans">
+
+                        <div className="about-us-text-content about-us-content-border">
+
+
+                            <p className="about-us-paragraph font-unbolded">
+                                {article.fifthSplit}
+                            </p>
+                            <div className="small-section-break"></div>
+                            <p className="about-us-paragraph font-unbolded">
+                                {article.sixthSplit}
+                            </p>
+                        </div>
+
+                        <div className="about-us-image-content">
+                            <div className="">
+                                <Carousel>
+                                    {article.imagesSplit3.map((image, index) => (
+                                        <Carousel.Item key={index}>
+                                            <img
+                                                className="d-block rounded carousel-image"
+                                                src={image}
+                                                alt={`IMG`}
+                                            />
+                                        </Carousel.Item>
+                                    ))}
+                                </Carousel>
+                            </div>
                         </div>
                     </div>
                 </div>
             )}
 
-            {article.layout === "centered-text-photo" && (
-                <div className="centered-layout">
-                    <div className="centered-content">
-                        {formattedContent}
+            {article.layout === "classic" && (
+                <div className="about-us-product-section work-sans">
+                    <div className="about-us-text-content about-us-content-border">
+                        <p className="about-us-paragraph font-unbolded">
+                            {formattedContent}
+                        </p>
+
                     </div>
-                    <img className="centered-image" src={article.imagesSplit1} alt="Article"/>
+                    <div className="about-us-image-content">
+                        <Carousel>
+                            {article.imagesSplit1.map((image, index) => (
+                                <Carousel.Item key={index}>
+                                    <img
+                                        className="d-block rounded carousel-image"
+                                        src={image}
+                                        alt={`IMG`}
+                                    />
+                                </Carousel.Item>
+                            ))}
+                        </Carousel></div>
                 </div>
             )}
         </div>

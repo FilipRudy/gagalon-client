@@ -4,7 +4,20 @@ import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import { Carousel } from 'react-bootstrap';
 
 export const CurrentPromotions: React.FC = () => {
-    const promoImages = ["https://gagalon-images.s3.eu-north-1.amazonaws.com/blog-posts/1/morawy/IMG-20240916-WA0000.webp"];
+    const promoImages = ["https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo1.webp",
+        "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo2.webp",
+        "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo10.webp",
+        "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo11.webp",
+        "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo12.webp",
+        "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo13.webp",
+        "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo14.webp",
+        "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo15.webp",
+        "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo16.webp",
+        "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo17.webp",
+        "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo18.webp",
+        "https://gagalon-images.s3.eu-north-1.amazonaws.com/current-promotions/promo19.webp",
+
+    ];
 
     useEffect(() => {
         const promoContainer = document.querySelector('.promo-carousel-container');

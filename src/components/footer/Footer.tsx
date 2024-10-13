@@ -17,9 +17,9 @@ export const Footer = () => {
                     <div className="footer-separator"></div>
                     <div className="footer-column">
                         <NavLink to="/o-nas" className="nav-link ">O nas</NavLink>
-                        <NavLink to="/aktualnosci" className="nav-link">Blog</NavLink>
-                        <NavLink to="/promocje" className="nav-link">Obecne promocje</NavLink>
-                        <NavLink to="/lokalizacje" className="nav-link">Nasze sklepy</NavLink>
+                        <NavLink to="/aktualnosci" className="nav-link">Aktualności</NavLink>
+                        <NavLink to="/promocje" className="nav-link">Promocje</NavLink>
+                        <NavLink to="/lokalizacje" className="nav-link">Gdzie jesteśmy</NavLink>
                         <NavLink to="/kontakt" className="nav-link">Kontakt</NavLink>
                     </div>
                 </div>
